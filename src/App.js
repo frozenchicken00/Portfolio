@@ -17,7 +17,7 @@ function App() {
         <div className="pt-16">
           <Main darkMode={darkMode} />
           <Contact />
-          <Footer />
+          <Footer darkMode={darkMode} />
         </div>
       </div>
     </div>
