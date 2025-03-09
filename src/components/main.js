@@ -1,8 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { AiOutlineDownload } from 'react-icons/ai';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaPhp, FaDocker } from 'react-icons/fa'; // Add PHP and Docker icons
-import { DiRuby } from 'react-icons/di'; // Add Ruby on Rails icon
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaPhp, FaDocker } from 'react-icons/fa';
+import { DiRuby } from 'react-icons/di';
+import { SiRubyonrails } from "react-icons/si";
 
 export default function Main({ darkMode }) {
     const { ref: skillsRef, inView: skillsInView } = useInView({ triggerOnce: true });
@@ -96,7 +97,7 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
-                                        <DiRuby className="text-red-500 text-8xl mt-14" />
+                                        <SiRubyonrails className="text-red-500 text-8xl mt-14" />
                                         <span>Ruby on Rails</span>
                                     </div>
                                 </li>
