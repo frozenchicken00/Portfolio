@@ -176,8 +176,195 @@ export default function Main({ darkMode }) {
             </section>
 
             {/*Projects section*/}
-            <section id="projects" className="min-h-screen flex items-center justify-center">
+            <section id="projects" className="min-h-screen py-20">
+                <div className="container mx-auto">
+                    <h2 className={`text-4xl font-bold mb-12 text-center ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+                        My Projects
+                    </h2>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Project 1 */}
+                        <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+                            <div className="relative h-48 bg-gray-200">
+                                <img 
+                                    src="anabada.png" 
+                                    alt="Anabada" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold mb-2">Anabada</h3>
+                                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                                Anabada is a community-driven marketplace that promotes sustainable consumption through sharing and reusing. The name "Anabada" reflects our core values: using items sparingly, sharing resources, exchanging goods, and reusing products to reduce waste.
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Ruby on Rails</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>PostgreSQL</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Elasticsearch</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Bootstrap 5</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>FactoryBot</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Capybara</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>BCrypt</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>OAuth</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Docker</span>
+                                </div>
+                                <a 
+                                    href="https://github.com/frozenchicken00/Anabada" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`inline-flex items-center px-4 py-2 rounded-lg ${darkMode 
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+                                >
+                                    View on GitHub <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
 
+                        {/* Project 2 */}
+                        <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+                            <div className="relative h-48 bg-gray-200">
+                                <img 
+                                    src="webtoontl.png" 
+                                    alt="Webtoontl" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold mb-2">WEBTOONTL</h3>
+                                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                                WebtoonTL is a web application built with Next.js that allows users to translate webtoons and comics while preserving the original artwork. The service focuses on translating PSD files containing comic/webtoon content into different languages.
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>NEXT.js</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>TypeScript</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>NextAuth.js</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Prisma ORM</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Tailwind CSS</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Google Cloud Storage</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Adobe Photoshop API</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>DeepL API</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Docker</span>
+                                </div>
+                                <a 
+                                    href="https://github.com/frozenchicken00/PSD-Translate" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`inline-flex items-center px-4 py-2 rounded-lg ${darkMode 
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+                                >
+                                    View on GitHub <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Project 3 */}
+                        <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+                            <div className="relative h-48 bg-gray-200">
+                                <img 
+                                    src="spread-sheet.png" 
+                                    alt="Email notification" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold mb-2">Google Sheets Email Notification</h3>
+                                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                                This Google Apps Script sends email notifications to tutors when specific ranges in a Google Sheet are edited. The script checks the edited cells, identifies the tutor responsible, and sends an email with details of the changes.
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>JavaScript</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Google App Script</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Express</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>MongoDB</span>
+                                </div>
+                                <a 
+                                    href="https://github.com/frozenchicken00/Email-Notification-in-Google-Sheets" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`inline-flex items-center px-4 py-2 rounded-lg ${darkMode 
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+                                >
+                                    View on GitHub <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Project 4 */}                
+                        <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+                            <div className="relative h-48 bg-gray-200">
+                                <img 
+                                    src="music-streaming.png" 
+                                    alt="Music Streaming" 
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold mb-2">Musicify</h3>
+                                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                                    A React Music Streaming web application. 
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>MERN Stack</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>REST API</span>
+                                </div>
+                                <a 
+                                    href="https://github.com/frozenchicken00/Music-Streaming" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`inline-flex items-center px-4 py-2 rounded-lg ${darkMode 
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+                                >
+                                    View on GitHub <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Project 5 */}
+                        <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+                            <div className="relative h-48 bg-gray-200">
+                                <img 
+                                    src="portfolio.png"
+                                    alt="Portfolio"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <div className="p-6">
+                                <h3 className="text-xl font-bold mb-2">Portfolio</h3>
+                                <p className={`mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                                    Hoyoung Kim's portfolio website built with React and Tailwind CSS.
+                                </p>
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>React</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Tailwind CSS</span>
+                                </div>
+                                <a 
+                                    href="https://github.com/frozenchicken00/Portfolio" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={`inline-flex items-center px-4 py-2 rounded-lg ${darkMode 
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700' 
+                                        : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+                                >
+                                    View on GitHub <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     );
