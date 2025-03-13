@@ -1,9 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { AiOutlineDownload } from 'react-icons/ai';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaPhp, FaDocker } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaPhp, FaDocker, FaJava } from 'react-icons/fa';
 import { DiRuby } from 'react-icons/di';
-import { SiRubyonrails } from "react-icons/si";
+import { SiRubyonrails, SiTypescript, SiNextdotjs, SiMongodb, SiPostgresql, SiMysql, SiPython, SiBootstrap, SiTailwindcss } from "react-icons/si";
 
 export default function Main({ darkMode }) {
     const { ref: skillsRef, inView: skillsInView } = useInView({ triggerOnce: true });
@@ -48,9 +48,7 @@ export default function Main({ darkMode }) {
                     <div className="border-r border-gray-400 pr-6">
                         <h1 className="text-4xl font-bold mb-8">About Me</h1>
                         <p className="text-xl mb-4">
-                            Fully committed to the philosophy of life-long learning, I'm a full-stack developer with a deep passion for JavaScript, React, and all things web development.
-                            The unique combination of creativity, logic, technology, and never running out of new things to discover drives my excitement and passion for web development.
-                            When I'm not at my computer, I like to spend my time reading, keeping fit, and playing guitar.
+                        I am a dedicated full-stack developer with a deep passion in JavaScript, TypeScript, React, and modern web frameworks. Committed to continuous learning, I thrive on the dynamic nature of web development, where creativity, logic, and technology intersect. My motivation always comes from a deep desire to contribute to society and create meaningful, impactful solutions that enhance people&#39;s lives.
                         </p>
                     </div>
 
@@ -73,8 +71,50 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
+                                        <SiBootstrap className="text-purple-600 text-8xl mt-14" />
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiTailwindcss className="text-teal-500 text-8xl mt-14" />
+                                        <span>Tailwind CSS</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
                                         <FaJs className="text-yellow-500 text-8xl mt-14" />
                                         <span>JavaScript</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiTypescript className="text-blue-500 text-8xl mt-14" />
+                                        <span>TypeScript</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiPython className="text-blue-500 text-8xl mt-14" />
+                                        <span>Python</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaJava className="text-red-600 text-8xl mt-14" />
+                                        <span>Java</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaNodeJs className="text-green-500 text-8xl mt-14" />
+                                        <span>Node.js</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaPhp className="text-indigo-600 text-8xl mt-14" />
+                                        <span>PHP</span>
                                     </div>
                                 </li>
                                 <li>
@@ -85,8 +125,20 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
-                                        <FaNodeJs className="text-green-500 text-8xl mt-14" />
-                                        <span>Node.js</span>
+                                        <SiMongodb className="text-green-600 text-8xl mt-14" />
+                                        <span>MongoDB</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiPostgresql className="text-blue-600 text-8xl mt-14" />
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiMysql className="text-cyan-600 text-8xl mt-14" />
+                                        <span>MySQL</span>
                                     </div>
                                 </li>
                                 <li>
@@ -103,8 +155,8 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
-                                        <FaPhp className="text-indigo-600 text-8xl mt-14" />
-                                        <span>PHP</span>
+                                        <SiNextdotjs className="text-black text-8xl mt-14" />
+                                        <span>Next.js</span>
                                     </div>
                                 </li>
                                 <li>
@@ -129,8 +181,50 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
+                                        <SiBootstrap className="text-purple-600 text-8xl mt-14" />
+                                        <span>Bootstrap</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiTailwindcss className="text-sky-400 text-8xl mt-14" />
+                                        <span>Tailwind CSS</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
                                         <FaJs className="text-yellow-500 text-8xl mt-14" />
                                         <span>JavaScript</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiTypescript className="text-blue-500 text-8xl mt-14" />
+                                        <span>TypeScript</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiPython className="text-blue-500 text-8xl mt-14" />
+                                        <span>Python</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaJava className="text-red-600 text-8xl mt-14" />
+                                        <span>Java</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaNodeJs className="text-green-500 text-8xl mt-14" />
+                                        <span>Node.js</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <FaPhp className="text-indigo-600 text-8xl mt-14" />
+                                        <span>PHP</span>
                                     </div>
                                 </li>
                                 <li>
@@ -141,8 +235,20 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
-                                        <FaNodeJs className="text-green-500 text-8xl mt-14" />
-                                        <span>Node.js</span>
+                                        <SiMongodb className="text-green-600 text-8xl mt-14" />
+                                        <span>MongoDB</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiPostgresql className="text-blue-600 text-8xl mt-14" />
+                                        <span>PostgreSQL</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex flex-col items-center">
+                                        <SiMysql className="text-cyan-600 text-8xl mt-14" />
+                                        <span>MySQL</span>
                                     </div>
                                 </li>
                                 <li>
@@ -159,8 +265,8 @@ export default function Main({ darkMode }) {
                                 </li>
                                 <li>
                                     <div className="flex flex-col items-center">
-                                        <FaPhp className="text-indigo-600 text-8xl mt-14" />
-                                        <span>PHP</span>
+                                        <SiNextdotjs className="text-black text-8xl mt-14" />
+                                        <span>Next.js</span>
                                     </div>
                                 </li>
                                 <li>
@@ -204,6 +310,7 @@ export default function Main({ darkMode }) {
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Bootstrap 5</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>FactoryBot</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Capybara</span>
+                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Selenium</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>BCrypt</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>OAuth</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Docker</span>
@@ -226,8 +333,8 @@ export default function Main({ darkMode }) {
                         {/* Project 2 */}
                         <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
                             <div className="relative h-48 bg-gray-200">
-                                <img 
-                                    src="webtoontl.png" 
+                                <img
+                                    src={darkMode ? "webtoontl.png" : "webtoontl-light.png"}
                                     alt="Webtoontl" 
                                     className="w-full h-full object-cover"
                                 />
@@ -280,8 +387,6 @@ export default function Main({ darkMode }) {
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>JavaScript</span>
                                     <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Google App Script</span>
-                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>Express</span>
-                                    <span className={`px-2 py-1 text-xs rounded-full ${darkMode ? 'bg-gray-700' : 'bg-gray-200'}`}>MongoDB</span>
                                 </div>
                                 <a 
                                     href="https://github.com/frozenchicken00/Email-Notification-in-Google-Sheets" 
@@ -335,7 +440,7 @@ export default function Main({ darkMode }) {
                         <div className={`rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
                             <div className="relative h-48 bg-gray-200">
                                 <img 
-                                    src="portfolio.png"
+                                    src={darkMode ? "portfolio.png" : "portfolio-light.png"}
                                     alt="Portfolio"
                                     className="w-full h-full object-cover"
                                 />
